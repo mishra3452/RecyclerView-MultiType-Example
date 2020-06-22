@@ -18,7 +18,7 @@ class RecyclerViewAdapter(context: Context, list: ArrayList<Data>) :
     private val context: Context = context
     var list: ArrayList<Data> = list
 
-    private inner class View1ViewHolder internal constructor(itemView: View) :
+    private inner class View1ViewHolder(itemView: View) :
         RecyclerView.ViewHolder(itemView) {
         var message: TextView = itemView.findViewById(R.id.textView)
         fun bind(position: Int) {
@@ -27,7 +27,7 @@ class RecyclerViewAdapter(context: Context, list: ArrayList<Data>) :
         }
     }
 
-    private inner class View2ViewHolder internal constructor(itemView: View) :
+    private inner class View2ViewHolder(itemView: View) :
         RecyclerView.ViewHolder(itemView) {
         var message: TextView = itemView.findViewById(R.id.textView)
         fun bind(position: Int) {
